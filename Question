@@ -1,0 +1,10 @@
+# Sample list
+elements = [2, 4, 6, 8, 4, 2, 4, 6, 2]
+
+# Element to count
+target = int(input("Enter the number you want to count: "))
+
+# Count occurrences
+count = elements.count(target)
+
+print(f"The number {target} appears {count} times in the list.")
