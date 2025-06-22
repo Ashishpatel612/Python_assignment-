@@ -1,0 +1,7 @@
+# Get number input from the user
+num = input("Enter a number: ")
+
+# Reverse the number using slicing
+reversed_num = num[::-1]
+
+print(f"Reversed number: {reversed_num}")
