@@ -1,0 +1,17 @@
+# Get input string from the user
+input_str = input("Enter a string: ")
+
+# Initialize an empty dictionary to hold character frequencies
+char_freq = {}
+
+# Loop through each character in the string
+for char in input_str:
+    if char in char_freq:
+        char_freq[char] += 1
+    else:
+        char_freq[char] = 1
+
+# Print the character frequency dictionary
+print("Character frequencies:")
+for char, freq in char_freq.items():
+    print(f"'{char}': {freq}")
