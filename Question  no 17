@@ -1,0 +1,12 @@
+def cumulative_sum(numbers):
+    result = []
+    total = 0
+    for num in numbers:
+        total += num
+        result.append(total)
+    return result
+
+# Example usage
+nums = [1, 2, 3, 4]
+print("Original list:", nums)
+print("Cumulative sum:", cumulative_sum(nums))
