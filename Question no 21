@@ -1,0 +1,11 @@
+def find_max_min(numbers):
+    if not numbers:
+        return None, None  # Handle empty list
+    max_val = max(numbers)
+    min_val = min(numbers)
+    return max_val, min_val
+
+# Example usage
+my_list = [12, 5, 8, 21, 3, 17]
+maximum, minimum = find_max_min(my_list)
+print(f"Maximum: {maximum}, Minimum: {minimum}")
