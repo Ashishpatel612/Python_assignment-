@@ -1,0 +1,17 @@
+# question  number 4
+def prime(num):
+    if num<=1:
+        return False
+    for i in range(2,num):
+        if num%i==0:
+            return False
+    return True 
+n=input("Enter ia number")
+number=int(n)
+if prime(number):
+    print(number,"number is prime")
+else:
+    print(number,"number is not prime")
+    
+            
+        
