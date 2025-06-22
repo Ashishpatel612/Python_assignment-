@@ -1,0 +1,14 @@
+def unique_elements(input_list):
+    seen = set()
+    unique_list = []
+    for item in input_list:
+        if item not in seen:
+            seen.add(item)
+            unique_list.append(item)
+    return unique_list
+
+# Example usage
+original = [4, 2, 4, 6, 2, 9, 6, 2, 1]
+result = unique_elements(original)
+print("Original list:", original)
+print("Unique elements:", result)
