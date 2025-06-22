@@ -1,0 +1,10 @@
+# question  number 3
+l=[1,2,3,4,5,6]
+n=len(l)
+aver=0
+total=0
+for i in l:
+    total+=i
+aver=total/n
+print("sum of list=" ,total)
+print("average of list=",aver)
