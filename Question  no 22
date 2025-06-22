@@ -1,0 +1,15 @@
+import string
+
+def is_pangram(sentence):
+    # Convert to lowercase and create a set of all letters in the sentence
+    letters = set(sentence.lower())
+
+    # Compare with the set of all lowercase alphabet letters
+    return set(string.ascii_lowercase).issubset(letters)
+
+# Example usage
+input_text = input("Enter a sentence: ")
+if is_pangram(input_text):
+    print("The sentence is a pangram.")
+else:
+    print("The sentence is not a pangram.")
